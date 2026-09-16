@@ -45,3 +45,9 @@ footer{padding:0 14px 30px;color:var(--muted);font-size:12px}
  .stats{grid-template-columns:repeat(2,1fr)}
  .textrow{flex-direction:column}
 }
+
+.single-wrap{max-width:760px;margin:0 auto}
+.next-row{display:flex;justify-content:flex-end;margin-top:16px}
+.next-row button{min-width:150px}
+.question-number{font-size:13px;color:var(--muted);margin-bottom:4px}
+.answer-reveal{margin-top:12px}
