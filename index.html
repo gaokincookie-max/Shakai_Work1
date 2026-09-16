@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社会テスト対策｜世界恐慌〜第二次世界大戦</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>社会テスト対策</h1>
+    <p>1920年代の大衆社会〜第二次世界大戦の終結</p>
+  </div>
+</header>
+
+<main>
+  <section class="controls card">
+    <div class="control-grid">
+      <label>単元
+        <select id="unitFilter">
+          <option value="all">すべて</option>
+        </select>
+      </label>
+      <label>形式
+        <select id="typeFilter">
+          <option value="all">すべて</option>
+          <option value="choice">四択</option>
+          <option value="text">記述</option>
+        </select>
+      </label>
+      <label>出題数
+        <select id="countFilter">
+          <option value="10">10問</option>
+          <option value="20" selected>20問</option>
+          <option value="40">40問</option>
+          <option value="80">全問</option>
+        </select>
+      </label>
+    </div>
+    <div class="buttons">
+      <button id="startBtn">テストを作る</button>
+      <button id="retryWrongBtn" class="secondary">間違えた問題だけ</button>
+    </div>
+    <p class="hint">選択肢は押した瞬間に判定。記述は入力して「答え合わせ」を押すと判定します。</p>
+  </section>
+
+  <section id="stats" class="stats card hidden">
+    <div><strong id="progress">0 / 0</strong><span>進捗</span></div>
+    <div><strong id="correct">0</strong><span>正解</span></div>
+    <div><strong id="wrong">0</strong><span>不正解</span></div>
+    <div><strong id="rate">0%</strong><span>正答率</span></div>
+  </section>
+
+  <section id="quiz"></section>
+
+  <section id="result" class="card hidden">
+    <h2>結果</h2>
+    <p id="resultText"></p>
+    <div class="buttons">
+      <button id="againBtn">同じ条件でもう一度</button>
+      <button id="wrongBtn" class="secondary">今回の間違いだけ復習</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>出典ページは、送付された教科書写真のページ番号に基づいています。</p>
+</footer>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
